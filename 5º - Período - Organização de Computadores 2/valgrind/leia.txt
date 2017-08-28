@@ -1,0 +1,2 @@
+Foi utilizado o script "valgrind.sh" para automatizar as execuções que foram feitas com cache de 8K 2-way, 16K 4-way e 32K 8-way, para cada entrada.
+as saidas foram armazenas nos arquivos da pasta Analises

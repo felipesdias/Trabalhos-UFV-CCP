@@ -1,0 +1,133 @@
+# hades.models.Design file
+#  
+[name] unnamed
+[components]
+hades.models.rtlib.io.OpinVector i21 46200 11400 @N 1001 28 1.0E-9 0
+hades.models.rtlib.io.OpinVector i20 46200 10200 @N 1001 28 1.0E-9 0
+hades.models.io.Ipin i31n 28200 19800 @N 1001 null 0
+hades.models.io.Ipin i02n 33000 9000 @N 1001 null 0
+hades.models.io.Ipin i34n 42600 19800 @N 1001 null 0
+hades.models.meta.Label i8 26400 7200 @N 1001 1 0 5 0 30 0.0 4 Felipe\u0020de\u0020Souza\u0020Dias\u0020-\u002081841
+hades.models.rtlib.io.IpinVector i7 21000 22200 @N 1001 28 0000000000000000000000000111_B 1.0E-9 0
+hades.models.io.Ipin i21n 28200 16200 @N 1001 null 1
+hades.models.rtlib.io.IpinVector i6 21000 21000 @N 1001 28 0000000000000000000000000110_B 1.0E-9 0
+hades.models.rtlib.io.IpinVector i5 21000 18600 @N 1001 28 0000000000000000000000000101_B 1.0E-9 0
+hades.models.io.Ipin i24n 42600 16200 @N 1001 null 1
+hades.models.rtlib.io.IpinVector i4 21000 17400 @N 1001 28 0000000000000000000000000100_B 1.0E-9 0
+hades.models.rtlib.io.IpinVector i3 21000 15000 @N 1001 28 0000000000000000000000000011_B 1.0E-9 0
+hades.models.rtlib.io.IpinVector i2 21000 13800 @N 1001 28 0000000000000000000000000010_B 1.0E-9 0
+hades.models.Design sw2_nbits9 36600 16800 @N 1001 switch.hds
+hades.models.rtlib.io.IpinVector i1 21000 11400 @N 1001 28 0000000000000000000000000001_B 1.0E-9 0
+hades.models.Design sw2_nbits8 36600 20400 @N 1001 switch.hds
+hades.models.rtlib.io.IpinVector i0 21000 10200 @N 1001 28 0000000000000000000000000000_B 1.0E-9 0
+hades.models.Design sw2_nbits7 31800 20400 @N 1001 switch.hds
+hades.models.Design sw2_nbits6 31800 16800 @N 1001 switch.hds
+hades.models.Design sw2_nbits5 31800 13200 @N 1001 switch.hds
+hades.models.Design sw2_nbits4 31800 9600 @N 1001 switch.hds
+hades.models.Design sw2_nbits3 27000 20400 @N 1001 switch.hds
+hades.models.io.Ipin i11n 28200 12600 @N 1001 null 0
+hades.models.Design sw2_nbits2 27000 16800 @N 1001 switch.hds
+hades.models.Design sw2_nbits1 27000 13200 @N 1001 switch.hds
+hades.models.io.Ipin i14n 42600 12600 @N 1001 null 0
+hades.models.Design sw2_nbits 27000 9600 @N 1001 switch.hds
+hades.models.io.Ipin i30n 22800 19800 @N 1001 null 0
+hades.models.io.Ipin i33n 37800 19800 @N 1001 null 0
+hades.models.io.Ipin i01n 28200 9000 @N 1001 1 0
+hades.models.io.Ipin i04n 42600 9000 @N 1001 null 0
+hades.models.Design sw2_nbits19 21600 9600 @N 1001 switch.hds
+hades.models.io.Ipin i20n 22800 16200 @N 1001  1
+hades.models.Design sw2_nbits18 21600 13200 @N 1001 switch.hds
+hades.models.io.Ipin i23n 37800 16200 @N 1001 null 1
+hades.models.Design sw2_nbits17 21600 16800 @N 1001 switch.hds
+hades.models.Design sw2_nbits16 21600 20400 @N 1001 switch.hds
+hades.models.Design sw2_nbits15 41400 9600 @N 1001 switch.hds
+hades.models.Design sw2_nbits14 41400 13200 @N 1001 switch.hds
+hades.models.Design sw2_nbits13 41400 16800 @N 1001 switch.hds
+hades.models.Design sw2_nbits12 41400 20400 @N 1001 switch.hds
+hades.models.Design sw2_nbits11 36600 9600 @N 1001 switch.hds
+hades.models.Design sw2_nbits10 36600 13200 @N 1001 switch.hds
+hades.models.io.Ipin i10n 22800 12600 @N 1001  0
+hades.models.io.Ipin i13n 37800 12600 @N 1001 null 0
+hades.models.io.Ipin i32n 33000 19800 @N 1001 null 0
+hades.models.io.Ipin i00n 22800 9000 @N 1001 1 0
+hades.models.io.Ipin i03n 37800 9000 @N 1001 null 1
+hades.models.io.Ipin i22n 33000 16200 @N 1001 null 1
+hades.models.rtlib.io.OpinVector i27 46200 22200 @N 1001 28 1.0E-9 0
+hades.models.io.Ipin i12n 33000 12600 @N 1001 null 1
+hades.models.rtlib.io.OpinVector i26 46200 21000 @N 1001 28 1.0E-9 0
+hades.models.rtlib.io.OpinVector i25 46200 18600 @N 1001 28 1.0E-9 0
+hades.models.rtlib.io.OpinVector i24 46200 17400 @N 1001 28 1.0E-9 0
+hades.models.rtlib.io.OpinVector i23 46200 15000 @N 1001 28 1.0E-9 0
+hades.models.rtlib.io.OpinVector i22 46200 13800 @N 1001 28 1.0E-9 0
+[end components]
+[signals]
+hades.signals.SignalStdLogicVector n39 28 2 sw2_nbits11 o0 sw2_nbits15 i0 1 2 39000 10200 41400 10200 0 
+hades.signals.SignalStdLogicVector n38 28 2 sw2_nbits4 o0 sw2_nbits11 i0 1 2 34200 10200 36600 10200 0 
+hades.signals.SignalStdLogicVector n37 28 2 sw2_nbits o0 sw2_nbits4 i0 1 2 29400 10200 31800 10200 0 
+hades.signals.SignalStdLogicVector n36 28 2 sw2_nbits19 o0 sw2_nbits i0 1 2 24000 10200 27000 10200 0 
+hades.signals.SignalStdLogicVector n35 28 2 sw2_nbits12 o1 i27 A 1 2 46200 22200 43800 22200 0 
+hades.signals.SignalStdLogicVector n67 28 2 sw2_nbits9 o0 sw2_nbits15 i1 1 2 39000 17400 41400 11400 0 
+hades.signals.SignalStdLogicVector n34 28 2 sw2_nbits12 o0 i26 A 1 2 43800 21000 46200 21000 0 
+hades.signals.SignalStdLogicVector n66 28 2 sw2_nbits9 o1 sw2_nbits14 i1 1 2 39000 18600 41400 15000 0 
+hades.signals.SignalStdLogicVector n33 28 2 sw2_nbits13 o1 i25 A 1 2 46200 18600 43800 18600 0 
+hades.signals.SignalStdLogicVector n65 28 2 sw2_nbits8 o0 sw2_nbits13 i1 1 2 39000 21000 41400 18600 0 
+hades.signals.SignalStdLogicVector n32 28 2 sw2_nbits13 o0 i24 A 1 2 43800 17400 46200 17400 0 
+hades.signals.SignalStdLogicVector n64 28 2 sw2_nbits10 o1 sw2_nbits12 i0 1 2 39000 15000 41400 21000 0 
+hades.signals.SignalStdLogicVector n31 28 2 sw2_nbits14 o1 i23 A 1 2 46200 15000 43800 15000 0 
+hades.signals.SignalStdLogicVector n63 28 2 sw2_nbits10 o0 sw2_nbits13 i0 1 2 39000 13800 41400 17400 0 
+hades.signals.SignalStdLogicVector n30 28 2 sw2_nbits14 o0 i22 A 1 2 43800 13800 46200 13800 0 
+hades.signals.SignalStdLogicVector n62 28 2 sw2_nbits11 o1 sw2_nbits14 i0 1 2 39000 11400 41400 13800 0 
+hades.signals.SignalStdLogicVector n61 28 2 sw2_nbits4 o1 sw2_nbits10 i0 1 2 34200 11400 36600 13800 0 
+hades.signals.SignalStdLogicVector n60 28 2 sw2_nbits5 o0 sw2_nbits11 i1 1 2 34200 13800 36600 11400 0 
+hades.signals.SignalStdLogicVector n29 28 2 sw2_nbits15 o1 i21 A 1 2 46200 11400 43800 11400 0 
+hades.signals.SignalStdLogicVector n28 28 2 sw2_nbits15 o0 i20 A 1 2 43800 10200 46200 10200 0 
+hades.signals.SignalStdLogicVector n27 28 2 i7 Y sw2_nbits16 i1 1 2 21000 22200 21600 22200 0 
+hades.signals.SignalStdLogicVector n59 28 2 sw2_nbits5 o1 sw2_nbits10 i1 1 2 36600 15000 34200 15000 0 
+hades.signals.SignalStdLogicVector n26 28 2 i6 Y sw2_nbits16 i0 1 2 21000 21000 21600 21000 0 
+hades.signals.SignalStdLogicVector n58 28 2 sw2_nbits6 o0 sw2_nbits9 i0 1 2 34200 17400 36600 17400 0 
+hades.signals.SignalStdLogicVector n25 28 2 i5 Y sw2_nbits17 i1 1 2 21000 18600 21600 18600 0 
+hades.signals.SignalStdLogicVector n57 28 2 sw2_nbits6 o1 sw2_nbits8 i0 1 2 36600 21000 34200 18600 0 
+hades.signals.SignalStdLogicVector n24 28 2 i4 Y sw2_nbits17 i0 1 2 21000 17400 21600 17400 0 
+hades.signals.SignalStdLogicVector n56 28 2 sw2_nbits7 o0 sw2_nbits9 i1 1 2 34200 21000 36600 18600 0 
+hades.signals.SignalStdLogicVector n23 28 2 i3 Y sw2_nbits18 i1 1 2 21000 15000 21600 15000 0 
+hades.signals.SignalStdLogicVector n55 28 2 sw2_nbits8 o1 sw2_nbits12 i1 1 2 39000 22200 41400 22200 0 
+hades.signals.SignalStdLogicVector n22 28 2 i2 Y sw2_nbits18 i0 1 2 21000 13800 21600 13800 0 
+hades.signals.SignalStdLogicVector n54 28 2 sw2_nbits7 o1 sw2_nbits8 i1 1 2 34200 22200 36600 22200 0 
+hades.signals.SignalStdLogicVector n21 28 2 i1 Y sw2_nbits19 i1 1 2 21000 11400 21600 11400 0 
+hades.signals.SignalStdLogicVector n53 28 2 sw2_nbits3 o1 sw2_nbits7 i1 1 2 29400 22200 31800 22200 0 
+hades.signals.SignalStdLogicVector n52 28 2 sw2_nbits3 o0 sw2_nbits6 i1 1 2 31800 18600 29400 21000 0 
+hades.signals.SignalStdLogicVector n20 28 2 i0 Y sw2_nbits19 i0 1 2 21000 10200 21600 10200 0 
+hades.signals.SignalStdLogicVector n51 28 2 sw2_nbits2 o1 sw2_nbits7 i0 1 2 29400 18600 31800 21000 0 
+hades.signals.SignalStdLogicVector n50 28 2 sw2_nbits2 o0 sw2_nbits6 i0 1 2 29400 17400 31800 17400 0 
+hades.signals.SignalStdLogic1164 n9 2 i11n Y sw2_nbits1 s 1 2 28200 13200 28200 12600 0 
+hades.signals.SignalStdLogic1164 n8 2 i21n Y sw2_nbits2 s 1 2 28200 16800 28200 16200 0 
+hades.signals.SignalStdLogic1164 n7 2 i31n Y sw2_nbits3 s 1 2 28200 19800 28200 20400 0 
+hades.signals.SignalStdLogic1164 n6 2 i12n Y sw2_nbits5 s 1 2 33000 12600 33000 13200 0 
+hades.signals.SignalStdLogic1164 n5 2 i13n Y sw2_nbits10 s 1 2 37800 12600 37800 13200 0 
+hades.signals.SignalStdLogic1164 n4 2 i04n Y sw2_nbits15 s 1 2 42600 9000 42600 9600 0 
+hades.signals.SignalStdLogic1164 n3 2 i02n Y sw2_nbits4 s 1 2 33000 9000 33000 9600 0 
+hades.signals.SignalStdLogic1164 n2 2 i03n Y sw2_nbits11 s 1 2 37800 9000 37800 9600 0 
+hades.signals.SignalStdLogic1164 n1 2 i01n Y sw2_nbits s 1 2 28200 9000 28200 9600 0 
+hades.signals.SignalStdLogic1164 n0 2 i00n Y sw2_nbits19 s 1 2 22800 9000 22800 9600 0 
+hades.signals.SignalStdLogic1164 n19 2 i20n Y sw2_nbits17 s 1 2 22800 16800 22800 16200 0 
+hades.signals.SignalStdLogic1164 n18 2 i30n Y sw2_nbits16 s 1 2 22800 19800 22800 20400 0 
+hades.signals.SignalStdLogicVector n49 28 2 sw2_nbits o1 sw2_nbits5 i0 1 2 29400 11400 31800 13800 0 
+hades.signals.SignalStdLogic1164 n17 2 i23n Y sw2_nbits9 s 1 2 37800 16800 37800 16200 0 
+hades.signals.SignalStdLogicVector n48 28 2 sw2_nbits1 o0 sw2_nbits4 i1 1 2 29400 13800 31800 11400 0 
+hades.signals.SignalStdLogic1164 n16 2 i33n Y sw2_nbits8 s 1 2 37800 20400 37800 19800 0 
+hades.signals.SignalStdLogicVector n47 28 2 sw2_nbits1 o1 sw2_nbits5 i1 1 2 29400 15000 31800 15000 0 
+hades.signals.SignalStdLogic1164 n15 2 i34n Y sw2_nbits12 s 1 2 42600 20400 42600 19800 0 
+hades.signals.SignalStdLogicVector n46 28 2 sw2_nbits19 o1 sw2_nbits2 i0 1 2 27000 17400 24000 11400 0 
+hades.signals.SignalStdLogic1164 n14 2 i24n Y sw2_nbits13 s 1 2 42600 16800 42600 16200 0 
+hades.signals.SignalStdLogicVector n45 28 2 sw2_nbits18 o1 sw2_nbits2 i1 1 2 27000 18600 24000 15000 0 
+hades.signals.SignalStdLogic1164 n13 2 i14n Y sw2_nbits14 s 1 2 42600 13200 42600 12600 0 
+hades.signals.SignalStdLogicVector n44 28 2 sw2_nbits16 o1 sw2_nbits3 i1 1 2 24000 22200 27000 22200 0 
+hades.signals.SignalStdLogic1164 n12 2 i32n Y sw2_nbits7 s 1 2 33000 19800 33000 20400 0 
+hades.signals.SignalStdLogicVector n43 28 2 sw2_nbits16 o0 sw2_nbits1 i1 1 2 24000 21000 27000 15000 0 
+hades.signals.SignalStdLogic1164 n11 2 i22n Y sw2_nbits6 s 1 2 33000 16200 33000 16800 0 
+hades.signals.SignalStdLogicVector n42 28 2 sw2_nbits17 o1 sw2_nbits3 i0 1 2 24000 18600 27000 21000 0 
+hades.signals.SignalStdLogic1164 n10 2 i10n Y sw2_nbits18 s 1 2 22800 13200 22800 12600 0 
+hades.signals.SignalStdLogicVector n41 28 2 sw2_nbits17 o0 sw2_nbits1 i0 1 2 24000 17400 27000 13800 0 
+hades.signals.SignalStdLogicVector n40 28 2 sw2_nbits18 o0 sw2_nbits i1 1 2 24000 13800 27000 11400 0 
+[end signals]
+[end]

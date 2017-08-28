@@ -1,0 +1,2 @@
+Copie os valores que estão dentro do arquivo "entrada.txt"
+Execute o programa e insira os valores no programa.

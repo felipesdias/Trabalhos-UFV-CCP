@@ -1,0 +1,4 @@
+- Abra o programa
+- Entre com o nome do mapa
+- Digite as cordenadas do ponto final e inicial
+- Sera gerado 1 arquivo para cada algoritimo, onde será mostrado as informação como: -Nós expandidos, -Tempo gasto e -Distancia, além disso nó mapa impresso é visivel os nós expandidos e o caminho encontrado

@@ -1,0 +1,74 @@
+Os resultados (vitoria, derrota e empate) são baseado sempre no openente, sejá ele começandou ou não o jogo
+
+================
+|| Oponente 1 ||
+================
+	Fazendo primeira jogada:
+		Vitoria: 4
+		Derrota: 6
+		Empate: 0
+
+	Computador padrão fazendo primeira jogada:
+		Vitoria: 2
+		Derrota: 8
+		Empate: 0
+
+	Total:
+		Vitoria: 6
+		Derrota: 14
+		Empate: 0
+
+
+================
+|| Oponente 2 ||
+================
+	Fazendo primeira jogada:
+		Vitoria: 5
+		Derrota: 5
+		Empate: 0
+
+	Computador padrão fazendo primeira jogada:
+		Vitoria: 3
+		Derrota: 7
+		Empate: 0
+
+	Total:
+		Vitoria: 8
+		Derrota: 12
+		Empate: 0
+
+================
+|| Oponente 3 ||
+================
+	Fazendo primeira jogada:
+		Vitoria: 7
+		Derrota: 2
+		Empate: 1
+
+	Computador padrão fazendo primeira jogada:
+		Vitoria: 6
+		Derrota: 4
+		Empate: 0
+
+	Total:
+		Vitoria: 13
+		Derrota: 6
+		Empate: 1
+
+================
+|| Oponente 4 ||
+================
+	Fazendo primeira jogada:
+		Vitoria: 8
+		Derrota: 2
+		Empate: 0
+
+	Computador padrão fazendo primeira jogada:
+		Vitoria: 6
+		Derrota: 4
+		Empate: 0
+
+	Total:
+		Vitoria: 14
+		Derrota: 6
+		Empate: 0

@@ -1,0 +1,46 @@
+==============
+=== BÁSICO ===
+==============
+Principal.cpp
+	Programa pedido no trabalho
+	
+===============================
+=== EXTRAS PARA PONTO EXTRA ===
+===============================
+---------------------------
+--- BackTrack iterativo ---
+---------------------------
+	Modelo iterativo usando a estrategia do backTrack
+		Possui a mesma eficiencia do principal
+		
+-------------------------------
+--- BackTrack por quadrante ---
+-------------------------------
+	Resolve o sudoku por quadrante -> 1º -> 2º -> 3º ... sendo ordenados preferencialmente pela linha, depois pela coluna ex:  1	2	3
+																															   4	5	6
+																														       7	8	9
+		Aparentemente possui uma eficiencia menor que o principal
+		
+-----------------------------------------------
+--- BackTrack com Candidatos desorganizados ---
+-----------------------------------------------
+	Resolve o sudoku sem ordem fixa dos candidatos, sendo assim sempre rtendo uma solução diferente
+		Resolve o pior caso que é com a primeira posicao n/2 e o restante 0, possui eficacia semelhante ou melhor aos demais
+
+-----------------------------------------		
+--- BackTrack com posicoes aleatorias ---
+-----------------------------------------
+	Resolve com ordem das posiçoes desorganizadas, realmente esse ficou ruim de mais pra resolver o sudoku, depende da sorte pra resposta vir rapido
+
+-----------------------------	
+--- BackTrack Full Random ---
+-----------------------------
+	Resolve com ordem das posiçoes e candidatos desorganizados, fico realmente uma bosta kkkkkkkkkkkk, depende extremamente da sorte pra resposta vir rapido
+	
+ptExtras:
+	Não esquece doS pontoS (no plural mesmo) extras
+		if(pontoExtras <= 1)
+			goto ptExtras;
+		else
+			printf("Vlw");
+return 0;

@@ -1,0 +1,286 @@
+<!doctype html> 
+<html class="no-js">
+
+	<head>
+		<meta charset="utf-8"/>
+		<title>FOLDER TEMPLATE</title>
+		
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link rel="stylesheet" media="all" href="css/style.css"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<!-- Adding "maximum-scale=1" fixes the Mobile Safari auto-zoom bug: http://filamentgroup.com/examples/iosScaleBug/ -->		
+				
+		<!-- JS -->
+		<script src="js/jquery-1.7.1.min.js"></script>
+		<script src="js/custom.js"></script>
+		<script src="js/tabs.js"></script>
+		<script src="js/css3-mediaqueries.js"></script>
+		<script src="js/jquery.columnizer.min.js"></script>
+		
+		<!-- Isotope -->
+		<script src="js/jquery.isotope.min.js"></script>
+		
+		<!-- Lof slider -->
+		<script src="js/jquery.easing.js"></script>
+		<script src="js/lof-slider.js"></script>
+		<link rel="stylesheet" href="css/lof-slider.css" media="all"  /> 
+		<!-- ENDS slider -->
+		
+		<!-- Tweet -->
+		<link rel="stylesheet" href="css/jquery.tweet.css" media="all"  /> 
+		<script src="js/tweet/jquery.tweet.js" ></script> 
+		<!-- ENDS Tweet -->
+		
+		<!-- superfish -->
+		<link rel="stylesheet" media="screen" href="css/superfish.css" /> 
+		<script  src="js/superfish-1.4.8/js/hoverIntent.js"></script>
+		<script  src="js/superfish-1.4.8/js/superfish.js"></script>
+		<script  src="js/superfish-1.4.8/js/supersubs.js"></script>
+		<!-- ENDS superfish -->
+		
+		<!-- prettyPhoto -->
+		<script  src="js/prettyPhoto/js/jquery.prettyPhoto.js"></script>
+		<link rel="stylesheet" href="js/prettyPhoto/css/prettyPhoto.css"  media="screen" />
+		<!-- ENDS prettyPhoto -->
+		
+		<!-- poshytip -->
+		<link rel="stylesheet" href="js/poshytip-1.1/src/tip-twitter/tip-twitter.css"  />
+		<link rel="stylesheet" href="js/poshytip-1.1/src/tip-yellowsimple/tip-yellowsimple.css"  />
+		<script  src="js/poshytip-1.1/src/jquery.poshytip.min.js"></script>
+		<!-- ENDS poshytip -->
+		
+		<!-- JCarousel -->
+		<script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+		<link rel="stylesheet" media="screen" href="css/carousel.css" /> 
+		<!-- ENDS JCarousel -->
+		
+		<!-- GOOGLE FONTS -->
+		<link href='http://fonts.googleapis.com/css?family=Voltaire' rel='stylesheet' type='text/css'>
+
+		<!-- modernizr -->
+		<script src="js/modernizr.js"></script>
+		
+		<!-- SKIN -->
+		<link rel="stylesheet" media="all" href="css/skin.css"/>
+		
+		<!-- Less framework -->
+		<link rel="stylesheet" media="all" href="css/lessframework.css"/>
+		
+		<!-- jplayer -->
+		<link href="player-skin/jplayer-black-and-yellow.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+		
+		<!-- flexslider -->
+		<link rel="stylesheet" href="css/flexslider.css" >
+		<script src="js/jquery.flexslider.js"></script>
+		
+		<!-- reply move form -->
+		<script src="js/moveform.js"></script>
+		
+	</head>
+	
+	
+	<body class="page" onload="">
+	
+		<!-- HEADER -->
+		<header>
+			<div class="wrapper cf">
+				
+				<div id="logo">
+					<a href="index.php"><img  src="img/logo.png" alt="Simpler"></a>
+				</div>
+				
+				<!-- nav -->
+	<ul id="nav" class="sf-menu">
+	<li ><a href="index.php">HOME</a></li>
+<?php
+session_start();
+
+if(!(isset($_SESSION['tipo']) && $_SESSION['tipo'] == 'loja')) {
+	echo '<li><a href="products.php">PRODUTOS</a></li>';
+	echo '<li><a href="#">LOJAS</a></li>';
+}
+
+if(isset($_SESSION['tipo']) && $_SESSION['tipo'] == 'cliente') {
+	echo '<li><a href="history.php">HISTÓRICO</a></li>';
+	echo '<li><a href="car.php">CARRINHO</a></li>';
+}
+
+if(isset($_SESSION['tipo']) && $_SESSION['tipo'] == 'loja') {
+	echo '<li><a href="#">HISTORICO</a></li>';
+	echo '<li><a href="registerProducts.php">CADASTRAR PRODUTO</a></li>';
+	echo '<li><a href="gerenPromo.php">GERENCIAR PROMOÇÃO</a></li>';
+}
+?>
+
+					
+					<li><a href="contact.php">CONTATO</a></li>
+<?php
+	if(!(isset($_SESSION['tipo']))) {
+				echo<<< HTML
+					<li><a href="#">LOGIN</a>
+						<ul>
+							<li>
+								<script type="text/javascript" src="js/form-validation.js"></script>
+								<table>
+									<tr>
+										<td>
+											<form action="validate.php" method="POST">
+											<fieldset style="width:100px" size="100">
+												Usuário 							
+												<input name="user"  id="user" type="text" class="form-poshytip" size="7"/>
+												<p>
+												Senha <input name="password"  id="password" type="password" class="form-poshytip" size="7"/>
+											<input name="enviar"  id="enviar" type="submit" class="form-poshytip" />
+											<a href="registerCliente.php">Cadastrar cliente </a>
+											</fieldset>
+											</form>
+											</script>
+										</td>
+										<td>								
+											<script type="text/javascript" src="js/form-validation.js"></script>
+											<form action="validate.php" method="POST">
+											<fieldset>
+												CNPJ 							
+												<input name="CNPJ"  id="CNPJ" type="text" class="form-poshytip" size="7"/>
+												<p>
+												Senha <input name="senha"  id="senha" type="password" class="form-poshytip" size="7"/>
+											<input name="enviar"  id="enviar" type="submit" class="form-poshytip" />
+											<a href="registerLoja.php">Cadastrar loja </a>
+											</fieldset>
+											</form>
+											</script>
+										</td>
+									</tr>
+								</table>
+							</li>
+						</ul>
+						
+					</li>
+HTML;
+	} else {
+		echo '<li><a href="logout.php">SAIR</a></li>';
+	}
+?>
+				</ul>
+				<div id="combo-holder"></div>
+				<!-- ends nav -->
+
+			</div>
+		</header>
+		<!-- ENDS HEADER -->
+		
+		<!-- MAIN -->
+		<div id="main">
+			<div class="wrapper cf">
+			
+			
+				
+			<!-- page content-->
+        	<div id="page-content" class="cf">        	
+	        		
+	        	
+	        	
+				
+				
+				<!-- Map -->
+				<script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=true" /></script>
+				<script type="text/javascript">
+					function initialize() {
+						var latlng = new google.maps.LatLng(-34.397, 150.644);
+						var myOptions = {
+						  zoom: 8,
+						  center: latlng,
+						  mapTypeId: google.maps.MapTypeId.ROADMAP
+					};
+					var map = new google.maps.Map(document.getElementById("map_canvas"),
+					    myOptions);
+					}
+				</script>
+				
+				<div id="map-holder">
+					<div id="map_canvas"></div>
+					<div id="map-content">
+						<p><h3>NOSSA LOCALIZAÇÃO</h3></p>
+	        	
+						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+					</div>
+				</div>
+				
+				<!-- ENDS Map -->
+				
+				
+				<p><h3>FORMULÁRIO DE CONTATO</h3></p>
+				<p>Entre em contato conosco.</p>
+				<!-- form -->
+				<script type="text/javascript" src="js/form-validation.js"></script>
+				<form id="contactForm" action="#" method="post">
+					<fieldset>
+														
+						<p>
+							<label for="name" >Nome</label>
+							<input name="name"  id="name" type="text" class="form-poshytip" title="Digite seu nome completo" />
+						</p>
+						
+						<p>
+							<label for="email" >E-mail</label>
+							<input name="email"  id="email" type="text" class="form-poshytip" title="Digite seu endereço de e-mail" />
+						</p>
+						
+						<p>
+							<label for="web">Website</label>
+							<input name="web"  id="web" type="text" class="form-poshytip" title="Digite seu website" />
+						</p>
+						
+						<p>
+							<label for="comments">Mensagem</label>
+							<textarea  name="comments"  id="comments" rows="5" cols="20" class="form-poshytip" title="Digite seu comentário"></textarea>
+						</p>
+						
+						<!-- send mail configuration -->
+						<input type="hidden" value="your@email.com" name="to" id="to" />
+						<input type="hidden" value="ENter the subject here" name="subject" id="subject" />
+						<input type="hidden" value="send-mail.php" name="sendMailUrl" id="sendMailUrl" />
+						<!-- ENDS send mail configuration -->
+						
+						<p><input type="button" value="Enviar" name="submit" id="submit" /> <span id="error" class="warning">Mensagem</span></p>
+					</fieldset>
+					
+				</form>
+				<p id="sent-form-msg" class="success">Dados enviados com sucesso!</p>
+				<!-- ENDS form -->				
+				
+    		</div>
+    		<!-- ENDS page content-->
+			
+			
+			
+			</div><!-- ENDS WRAPPER -->
+		</div>
+		<!-- ENDS MAIN -->
+		
+		<!-- Tratando os dados dos formulários -->
+		<?php
+			if(isset($_POST['name']) && isset($_POST['email']) && isset($_POST['web']) && isset($_POST['comments'])) {
+				$nome = $_POST['name'];
+				$email = $_POST['email'];
+				$web = $_POST['web'];
+				$mensagem = $_POST['comments'];
+			}
+		?>
+	
+		
+		<!-- FOOTER -->
+
+		<!-- ENDS FOOTER -->
+		
+		<!-- Start google map -->
+		<script>initialize();</script>
+	
+	</body>
+	
+	
+	
+</html>

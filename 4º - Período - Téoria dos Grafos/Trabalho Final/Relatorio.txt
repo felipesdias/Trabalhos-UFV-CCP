@@ -1,0 +1,138 @@
+////////////////////////////////////////////
+///// Felipe de Souza Dias - 81841 /////////
+///// Marcelo Matos de Menezes - 75254 /////
+////////////////////////////////////////////
+
+=====================
+===== Questão 1 =====
+=====================
+
+	Para solucionar o exercício foi usado o método de Prim. O algoritmo foi construído baseado na ideia que foi dada em aula.
+	
+	Solução encontrada foi:
+	      Sao Luis ->          Belem, custo:  481
+		  Brasilia -> Belo Horizonte, custo:  624
+			Manaus ->      Boa Vista, custo:  661
+			Palmas ->       Brasilia, custo:  620
+		   Goiania ->   Campo Grande, custo:  705
+	  Campo Grande ->         Cuiaba, custo:  559
+		 Sao Paulo ->       Curitiba, custo:  338
+		  Curitiba ->  Florianopolis, custo:  251
+			 Natal ->      Fortaleza, custo:  435
+		  Brasilia ->        Goiania, custo:  173
+			Recife ->    Joao Pessoa, custo:  104
+			 Belem ->         Macapa, custo:  329
+		   Aracaju ->         Maceio, custo:  201
+			Macapa ->         Manaus, custo: 1054
+	   Joao Pessoa ->          Natal, custo:  151
+		  Teresina ->         Palmas, custo:  835
+	 Florianopolis ->   Porto Alegre, custo:  376
+			Manaus ->    Porto Velho, custo:  761
+			Maceio ->         Recife, custo:  202
+	   Porto Velho ->     Rio Branco, custo:  449
+			Vicosa ->     R. Janeiro, custo:  241
+		   Aracaju ->       Salvador, custo:  277
+		  Teresina ->       Sao Luis, custo:  329
+		R. Janeiro ->      Sao Paulo, custo:  357
+		 Fortaleza ->       Teresina, custo:  495
+			Vicosa ->        Vitoria, custo:  274
+	Belo Horizonte ->         Vicosa, custo:  144
+	
+									 Total: 11426
+									 
+
+=====================									 
+===== Questão 2 =====
+=====================
+
+	Para solucionar o exercício foi usado o algoritmo de busca em profundidade em um grafo auxiliar contendo apenas as arestas entre as cidades que tinham distância igual ou inferior ao limite L.
+	Como Macapá não liga em nenhuma outra cidade via rodovia, logo o número mínimo de compenentes é 2. Para diferentes valores de L, encontramos as seguintes soluções:
+	
+		Tamaho L: 250
+		Numero de sub-redes: 24
+
+		Tamaho L: 500
+		Numero de sub-redes: 14
+
+		Tamaho L: 750
+		Numero de sub-redes: 9
+
+		Tamaho L: 1000
+		Numero de sub-redes: 4
+
+		Tamaho L: 1250
+		Numero de sub-redes: 3
+
+		Tamaho L: 1500
+		Numero de sub-redes: 2
+		
+=====================
+===== Questão 3 =====
+=====================
+
+	Para solucionar o exercício foi usado a heurística do vizinho mais próximo para encontrar o caminho hamiltoniano. Os resultados encontrados foram:
+	
+	MODO AEREO:
+			Rio Branco ->    Porto Velho, custo:  449
+		   Porto Velho ->         Manaus, custo:  761
+				Manaus ->      Boa Vista, custo:  661
+			 Boa Vista ->         Macapa, custo: 1110
+				Macapa ->          Belem, custo:  329
+				 Belem ->       Sao Luis, custo:  481
+			  Sao Luis ->       Teresina, custo:  329
+			  Teresina ->      Fortaleza, custo:  495
+			 Fortaleza ->          Natal, custo:  435
+				 Natal ->    Joao Pessoa, custo:  151
+		   Joao Pessoa ->         Recife, custo:  104
+				Recife ->         Maceio, custo:  202
+				Maceio ->        Aracaju, custo:  201
+			   Aracaju ->       Salvador, custo:  277
+			  Salvador ->        Vitoria, custo:  839
+			   Vitoria ->         Vicosa, custo:  274
+				Vicosa -> Belo Horizonte, custo:  144
+		Belo Horizonte ->     R. Janeiro, custo:  339
+			R. Janeiro ->      Sao Paulo, custo:  357
+			 Sao Paulo ->       Curitiba, custo:  338
+			  Curitiba ->  Florianopolis, custo:  251
+		 Florianopolis ->   Porto Alegre, custo:  376
+		  Porto Alegre ->   Campo Grande, custo: 1119
+		  Campo Grande ->         Cuiaba, custo:  559
+				Cuiaba ->        Goiania, custo:  740
+			   Goiania ->       Brasilia, custo:  173
+			  Brasilia ->         Palmas, custo:  620
+
+								   Custo total: 12114
+							   
+	MODO RODOVIARIO:
+			Rio Branco ->    Porto Velho, custo:  544
+		   Porto Velho ->         Manaus, custo:  901
+				Manaus ->      Boa Vista, custo:  785
+			 Boa Vista ->         Macapa, custo: 1110
+				Macapa ->          Belem, custo:  329
+				 Belem ->       Sao Luis, custo:  806
+			  Sao Luis ->       Teresina, custo:  446
+			  Teresina ->      Fortaleza, custo:  634
+			 Fortaleza ->          Natal, custo:  537
+				 Natal ->    Joao Pessoa, custo:  185
+		   Joao Pessoa ->         Recife, custo:  120
+				Recife ->         Maceio, custo:  285
+				Maceio ->        Aracaju, custo:  294
+			   Aracaju ->       Salvador, custo:  356
+			  Salvador ->        Vitoria, custo: 1202
+			   Vitoria ->         Vicosa, custo:  402
+				Vicosa -> Belo Horizonte, custo:  226
+		Belo Horizonte ->     R. Janeiro, custo:  434
+			R. Janeiro ->      Sao Paulo, custo:  429
+			 Sao Paulo ->       Curitiba, custo:  408
+			  Curitiba ->  Florianopolis, custo:  300
+		 Florianopolis ->   Porto Alegre, custo:  476
+		  Porto Alegre ->   Campo Grande, custo: 1518
+		  Campo Grande ->         Cuiaba, custo:  694
+				Cuiaba ->        Goiania, custo:  934
+			   Goiania ->       Brasilia, custo:  209
+			  Brasilia ->         Palmas, custo:  973
+
+								   Custo total: 15537
+							   
+	As 2 rotas foram iguais e seguiram basicamente esta ordem:
+		Norte -> Nordeste -> Sudeste -> Sul -> Centro-Oeste

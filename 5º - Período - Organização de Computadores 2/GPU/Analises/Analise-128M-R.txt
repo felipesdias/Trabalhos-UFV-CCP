@@ -1,0 +1,23 @@
+134217728
+33554432
+
+==2977== NVPROF is profiling process 2977, command: ./sum.out 27 512 1 0
+Soma executada com sucesso==2977== Profiling application: ./sum.out 27 512 1 0
+==2977== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 69.96%  75.220ms         3  25.073ms  24.846ms  25.450ms  [CUDA memcpy HtoD]
+ 24.60%  26.451ms         1  26.451ms  26.451ms  26.451ms  [CUDA memcpy DtoH]
+  5.43%  5.8402ms         1  5.8402ms  5.8402ms  5.8402ms  sumArrayGPU(int, float*, float*, float*, int)
+
+==2977== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 52.71%  121.18ms         3  40.392ms  226.38us  120.72ms  cudaMalloc
+ 47.12%  108.32ms         4  27.080ms  25.011ms  32.639ms  cudaMemcpy
+  0.12%  274.78us        83  3.3100us     163ns  118.73us  cuDeviceGetAttribute
+  0.02%  53.010us         1  53.010us  53.010us  53.010us  cudaLaunch
+  0.02%  37.095us         1  37.095us  37.095us  37.095us  cuDeviceTotalMem
+  0.01%  29.997us         1  29.997us  29.997us  29.997us  cuDeviceGetName
+  0.00%  6.6960us         5  1.3390us     187ns  5.4120us  cudaSetupArgument
+  0.00%  2.5310us         1  2.5310us  2.5310us  2.5310us  cudaConfigureCall
+  0.00%  1.1140us         2     557ns     287ns     827ns  cuDeviceGetCount
+  0.00%     595ns         2     297ns     209ns     386ns  cuDeviceGet

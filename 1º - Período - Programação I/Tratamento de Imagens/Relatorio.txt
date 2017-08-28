@@ -1,0 +1,13 @@
+=====================
+===== Relatorio =====
+=====================
+
+Manual de Utilização
+
+1º - O programa pedira o nome do arquivo a ser aberto, junto ao nome deve-se colocar a extenção do arquivo, que no caso é ".pnm'"
+2º - O programa irá pedir o nome do arquivo que sera gerado, com os filtros devidamente aplicados
+3º - Ira aparecer um menu com diversas opções, dentre elas salvar e fechar o programa. Lembrendo que a opção salvar, ira gerar o arquivo com os filtros aplicados ate o momento
+OBS : O programa ira mostrar cada opção aplicada a imagem, e na ordem de aplicação
+OBS2: O filtro random, gera um filtro novo e aleatorio, onde tera filtros extremamentes interessantes ou não. Lembro que pode-se aplicar esse filtro diversas vezes
+OBS3: Função de colorir uma imagem preta e branca, ira salvar os dados dela, sendo assim, quando aplicar o filtro Tons de Cinza, ela voltara para a imagem original
+OBS4: Aplicando a função Colorir -> Por pixels, e posteriormente um novo filtro, podendo ser o Random. Gera uma imagem bastante interessante 

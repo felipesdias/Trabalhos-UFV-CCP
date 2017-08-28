@@ -1,0 +1,9 @@
+O programa main gera 2 matrizes de mesma dimensão com valores fixos e faz a multiplicação delas.
+
+O programa trabalha com matrizes em potência de dois, onde o seu tamanho é o expoente da potencia e é recebido como parametro (não trata exceções):
+	2^10 = 1k
+	2^12 = 4k
+	2^20 = 1M
+	...
+
+A asnalises geradas pelo gprof, tabela e demais infirmações estão anexadas a pasta compactada.

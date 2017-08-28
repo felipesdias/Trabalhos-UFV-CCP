@@ -1,0 +1,48 @@
+
+[JavaFSM V1.0]
+[MOORE]
+[Name]
+Paginacao
+[Inputs 3]
+miss,0
+full,0
+fim_fetch,0
+[Outputs 10]
+mem_read
+mem_write
+mux1
+clock_counter
+FIFO
+salva_end
+salva_end2
+mux2
+verificaFull
+clock_fetch
+[Zustaende 11]
+le_pag1,233,185,false,0,1,0,0,0,0,0,0,0,0
+le_pag2,233,248,false,0,1,1,0,0,0,0,0,0,0
+pag2_sucesso,302,321,false,0,1,0,0,0,1,0,0,0,0
+pag2_miss,160,316,false,0,1,0,0,1,0,0,0,1,0
+pag2_cheia,197,384,false,0,0,0,0,0,0,0,0,0,0
+pag2_load,77,249,false,0,1,0,0,0,0,0,0,0,0
+le_resp,378,279,false,0,1,0,0,0,0,1,1,0,0
+load,233,85,true,1,1,0,0,0,0,0,0,0,0
+restart,311,153,false,1,1,0,0,0,0,0,0,0,0
+pag2_fetch,76,348,false,0,0,1,0,0,0,0,0,0,1
+reseta_fetch,149,207,false,1,1,0,0,0,0,0,0,0,1
+[Transitionen 13]
+le_pag1,le_pag2,*
+le_pag2,pag2_miss,miss
+le_pag2,pag2_sucesso,!miss
+pag2_miss,pag2_load,!full
+pag2_miss,pag2_cheia,full
+pag2_sucesso,le_resp,*
+restart,le_pag1,*
+load,le_pag1,*
+le_resp,restart,*
+pag2_fetch,pag2_load,*
+pag2_load,pag2_fetch,!fim_fetch
+pag2_load,reseta_fetch,fim_fetch
+reseta_fetch,le_pag2,*
+[Kommentare 0]
+[ENDE]
